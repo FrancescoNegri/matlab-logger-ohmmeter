@@ -131,7 +131,8 @@ if (connectionErrorFlag == false)
 
     %% Saving data
     disp("Saving data ...");
-
+    
+    mkdir("data");
     sessionID = strcat(sessionID, "_", samplingFrequency, "Hz");
 
     if (tmCount >= 1)
